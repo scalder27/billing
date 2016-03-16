@@ -1,0 +1,213 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Proxima Nova';
+}
+
+.container
+{
+  padding-left: 5%;
+  padding-top: 50px;
+}
+
+.container-example
+{
+  display: flex;
+  flex-direction: row;
+}
+
+/*фон темный*/
+.container-example-dark
+{
+  background-color: #404040;
+  position: relative;
+}
+
+header
+{
+  margin-top: 60px;
+}
+
+header p
+{
+  margin-top: -15px;
+}
+
+
+.hover-text
+{
+  display: none;
+  color: #404040;
+  font-size: 24px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.hover-text-light
+{
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.hover
+{
+  width: 100%;
+  height: 0px;
+  padding-top: 0px;
+  position: absolute;
+  text-align: center;
+  vertical-align: baseline;
+  border-bottom: 1px solid #b7b7b7;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.container-example-dark:hover .hover
+{
+  height: 82px;
+  padding-top: 58px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.container-example-light:hover .hover
+{
+  display: inline-block;
+  height: 82px;
+  padding-top: 58px;
+  background-color: rgba(64, 64, 64, 0.7);
+}
+.container-example-dark:hover .hover-text
+{
+  display: inline;
+}
+
+.container-example-light:hover .hover-text-light
+{
+  display: inline;
+}
+
+.hover-bottom
+{
+  width: 100%;
+  height: 0px;
+  padding-top: 0px;
+  position: absolute;
+  text-align: center;
+  vertical-align: baseline;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.container-example-dark:hover .hover-bottom
+{
+  height: 82px;
+  padding-top: 58px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container-example-light:hover .hover-bottom
+{
+  height: 82px;
+  padding-top: 58px;
+  background-color: rgba(64, 64, 64, 0.7);
+}
+
+
+
+/*фон светлый*/
+.container-example-light
+{
+  background-color: #eae5df;
+  position: relative;
+}
+
+/*фон картинкой*/
+.container-image
+{
+  background: url(https://images.unsplash.com/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8aae827318dc14d0b863be5e94a0fb41) no-repeat 50%;
+  background-size: 100%;
+  margin-left: -80px;
+}
+
+
+/*Типографика*/
+h1
+{
+	font-weight: normal;
+  font-size: 38px;
+  color: #8E3B4C;
+  margin-bottom: -30px;
+}
+
+h2
+{
+  font-weight: lighter;
+  font-size: 26px;
+}
+
+
+p
+{
+  font-size: 18px;
+  width: 700px;
+}
+
+img
+{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/*стили логотипов*/
+.logo
+{
+  height: 27px;
+}
+
+.logo-vert
+{
+  height: 64px;
+}
+
+/*прозрачная подложка под логотипом*/
+.container-example-image-logo
+{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin-left: -40px;
+}
+
+/*упорядочивает логотипы внутри контейнера*/
+.vertical
+{
+  width: 430px;
+  height: 160px;
+  padding: 70px 0px 50px 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+
+.vertical-image
+{
+  width: 100%;
+  height: 400px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-margin
+{
+  margin-bottom: 40px;
+}

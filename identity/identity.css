@@ -1,0 +1,55 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.img
+{
+  float: right;
+  margin-top: 10px;
+}
+
+.img-download
+{
+  font-family: "Segoe UI";
+  font-size: 24px;
+  color: #b7b7b7;
+  text-decoration: none;
+  background-color: #FFF;
+  opacity: 0.5;
+  padding: 7px 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.img-download-dark
+{
+  font-family: "Segoe UI";
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #b7b7b7;
+  opacity: 0.5;
+  padding: 7px 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.img-download:hover
+{
+  opacity: 0.8;
+  transition: all 0.7s ease 0.1s;
+  color: #8c8c8c;
+}
+
+.img-download-dark:hover
+{
+  opacity: 0.9;
+  transition: all 0.7s ease 0.1s;
+}
+
+.fotorama
+{
+  padding-left: 0px;
+}
