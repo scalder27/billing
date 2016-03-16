@@ -4,6 +4,7 @@ body
   padding: 0;
   font-family: 'Proxima Nova';
   color: #404040;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -11,14 +12,11 @@ body
 .container
 {
   margin: 0 auto;
+  /*width: 100%;*/
   max-width: 1440px;
-  padding: 30px 100px 50px 100px;
+  padding: 3% 10% 10% 10%;
 }
 
-.width
-{
-  width: 100%;
-}
 .description
 {
   margin-top: 70px;
@@ -71,6 +69,7 @@ body
   font-size: 24px;
   font-weight: normal;
   text-decoration: none;
+  visibility: hidden;
 }
 
 .hover
@@ -85,6 +84,7 @@ body
   top: 0;
   left: 0;
   transition: all 0.3s ease 0s;
+  visibility: hidden;
 }
 
 .container-example-dark:hover .hover
@@ -92,6 +92,7 @@ body
   height: 82px;
   padding-top: 58px;
   background-color: rgba(255, 255, 255, 0.9);
+  visibility: visible;
 }
 
 
@@ -100,6 +101,7 @@ body
   height: 82px;
   padding-top: 58px;
   background-color: rgba(255, 255, 255, 0.8);
+  visibility: visible;
 }
 
 .container-example-light:hover .hover
@@ -108,6 +110,7 @@ body
   height: 82px;
   padding-top: 58px;
   background-color: rgba(64, 64, 64, 0.7);
+  visibility: visible;
 }
 .container-example-dark:hover .hover-text
 {
@@ -171,8 +174,8 @@ body
 
 .container-image
 {
-  background: url(https://images.unsplash.com/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8aae827318dc14d0b863be5e94a0fb41) no-repeat 50%;
-  background-size: 100%;
+  position: relative;
+  background: url(https://images.unsplash.com/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8aae827318dc14d0b863be5e94a0fb41) 50% 50%;
 }
 
 
@@ -273,4 +276,32 @@ img.logo-vert-padding
 .logo-margin
 {
   margin-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 1120px)
+{
+  .vertical
+  { width: 100%;}
+}
+
+@media only screen and (max-width: 370px)
+{
+  h1
+  {
+    font-size: 30px;
+    margin-bottom: -50px;
+  }
+
+  p
+  {
+    font-size: 20px;
+    width: 100%;
+    min-width: 0px;
+  }
+
+  .container
+  {width: 100%;}
+  .container-header p
+  {margin-bottom: -20px;}
 }
