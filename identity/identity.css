@@ -6,8 +6,9 @@ body
 
 .img
 {
-  float: right;
-  margin-top: 10px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
 }
 
 .img-download
