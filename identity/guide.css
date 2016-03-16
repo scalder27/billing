@@ -125,6 +125,7 @@ body
 .container-example-light:hover .hover-text-light
 {
   display: inline;
+  visibility: visible;
 }
 
 .hover-bottom
