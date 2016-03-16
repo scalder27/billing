@@ -305,4 +305,16 @@ img.logo-vert-padding
   {width: 100%;}
   .container-header p
   {margin-bottom: -20px;}
+
+  /*div.hover
+  {
+    display: block;
+    height: 82px;
+    background-color: #fff;
+    opacity: 0.5;
+    z-index: 1;
+    width: 30%;
+    padding-top: 58px;
+    visibility: visible;
+  }*/
 }
