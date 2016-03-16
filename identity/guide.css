@@ -7,6 +7,7 @@ body
   -webkit-font-smoothing: antialiased;
 }
 
+
 .container
 {
   margin: 0 auto;
@@ -14,6 +15,10 @@ body
   padding: 30px 100px 50px 100px;
 }
 
+.width
+{
+  width: 100%;
+}
 .description
 {
   margin-top: 70px;
@@ -196,8 +201,9 @@ h2
 p
 {
   font-size: 18px;
-  width: 700px;
+  width: 60%;
   margin-top: 0px;
+  min-width: 400px;
 }
 
 img
@@ -207,14 +213,31 @@ img
 }
 
 /* стили логотипов */
+.logo-image
+{
+  height: 27px;
+  margin-top: 60px;
+}
+.logo-vert-image
+{
+  height: 64px;
+}
+
+img.logo-vert-padding
+{
+  padding-right: 37px;
+}
+
 .logo
 {
   height: 27px;
+  margin: 75px auto 0;
 }
 
 .logo-vert
 {
   height: 64px;
+  margin: 50px auto 0;
 }
 
 /*прозрачная подложка под логотипом*/
@@ -222,16 +245,14 @@ img
 {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
-  margin-left: -40px;
 }
 
 /*упорядочивает логотипы внутри контейнера*/
 .vertical
 {
-  width: 25.27%;
+  width: 33.33%;
   min-width: 300px;
-  height: 160px;
-  padding: 110px 0px 50px 110px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -244,7 +265,6 @@ img
   width: 100%;
   min-width: 300px;
   height: 400px;
-  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
