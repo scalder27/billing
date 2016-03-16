@@ -12,7 +12,7 @@ body
 {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 30px 100px 50px 100px;
+  padding: 3% 10% 10% 10%;
 }
 
 .width
@@ -171,8 +171,7 @@ body
 
 .container-image
 {
-  background: url(https://images.unsplash.com/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8aae827318dc14d0b863be5e94a0fb41) no-repeat 50%;
-  background-size: 100%;
+  background: url(https://images.unsplash.com/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8aae827318dc14d0b863be5e94a0fb41) 50% 50%;
 }
 
 
