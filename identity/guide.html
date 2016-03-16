@@ -17,16 +17,33 @@
 </head>
 
 <body>
-  <div class="container">
-    <h1>Как использовать лого Биллинга</h1>
-    <header>
-      <h2>Логотип</h2>
-      <p>Главный идентификатор сервиса. Ипользовать как логотип в интерфейсе,
-        новостях, рассылках. Можно в презентациях, любых печатных материалах.
-        При любом использовании важно помнить про контраст.</p>
+  <article class="container">
+    <header class="container-header">
+      <p>Обновлено 16.03.2015</p>
+      <h1>Как использовать лого Биллинга</h1>
     </header>
 
-    <div class="container-example">
+    <section class="description">
+      <h2>Логотип</h2>
+      <p>
+        Главный идентификатор сервиса. Ипользовать как логотип в интерфейсе,
+        новостях, рассылках. Можно в презентациях, любых печатных материалах.
+        При любом использовании важно помнить про контраст.
+      </p>
+    </section>
+
+    <!-- Картинка для привлечения внимания -->
+    <section class="container-image">
+      <div class="example-image vertical-image">
+        <img src="logos/logo-colored.png" alt="" class="logo container-example-image-logo">
+        <img src="logos/logo-colored-vert.png" alt="" class="logo-vert container-example-image-logo">
+      </div>
+    </section>
+
+    <!-- Логотипы для скачивания -->
+    <section class="container-example">
+
+      <!-- На темном фоне -->
       <div class="container-example-dark vertical">
         <img src="logos/logo-mono.png" alt="" class="logo">
         <img src="logos/logo-mono-vert.png" alt="" class="logo-vert">
@@ -38,6 +55,19 @@
         </div>
       </div>
 
+      <!-- На цветном фоне -->
+      <div class="container-example-colored vertical">
+        <img src="logos/logo-mono.png" alt="" class="logo">
+        <img src="logos/logo-mono-vert.png" alt="" class="logo-vert">
+        <div class="hover">
+          <a href="logos/logo-mono.png" target="blank" class="hover-text">Скачать</a>
+        </div>
+        <div class="hover-bottom">
+          <a href="logos/logo-mono-vert.png" target="blank" class="hover-text">Скачать</a>
+        </div>
+      </div>
+
+      <!-- На светлом фоне -->
       <div class="container-example-light vertical">
         <img src="logos/logo-colored.png" alt="" class="logo">
         <img src="logos/logo-colored-vert.png" alt="" class="logo-vert">
@@ -48,16 +78,14 @@
           <a href="logos/logo-colored-vert.png" target="blank" class="hover-text-light">Скачать</a>
         </div>
       </div>
+    </section>
 
-      <div class="container-example-image vertical">
-        <img src="logos/logo-colored.png" alt="" class="logo container-example-image-logo">
-        <img src="logos/logo-colored-vert.png" alt="" class="logo-vert container-example-image-logo">
-      </div>
-    </div>
-    <header>
+
+    <!-- Второй раздел  -->
+    <section class="description">
       <h2>Большой кораблик</h2>
       <p>Можно использовать для презентаций, печати на сувенирке.</p>
-    </header>
+    </section>
 
     <!-- Fotorama -->
     <div class="fotorama" data-width="101%" data-allowfullscreen="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down": true}'>
@@ -77,8 +105,7 @@
         <a href="5-big.png" class="img-download" target="blank">Скачать</a>
       </div>
     </div>
+  </arcticle>
 
-
-  </div>
 </body>
 </html>

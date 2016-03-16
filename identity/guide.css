@@ -3,10 +3,15 @@ body
   margin: 0;
   padding: 0;
   font-family: 'Proxima Nova';
+  color: #404040;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container
 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
   padding-left: 5%;
   padding-top: 50px;
 }
@@ -24,6 +29,12 @@ body
   position: relative;
 }
 
+.container-example-colored
+{
+  background-color: #8E3B4C;
+  position: relative;
+}
+
 header
 {
   margin-top: 60px;
@@ -34,6 +45,15 @@ header p
   margin-top: -15px;
 }
 
+.container-header p
+{
+  margin-bottom: -25px;
+  font-size: 16px;
+  color: #b7b7b7;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+}
 
 .hover-text
 {
