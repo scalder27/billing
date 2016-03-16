@@ -16,10 +16,6 @@ body
   padding: 3% 10% 10% 10%;
 }
 
-.width
-{
-  width: 100%;
-}
 .description
 {
   margin-top: 70px;
@@ -172,6 +168,7 @@ body
 
 .container-image
 {
+  position: relative;
   background: url(https://images.unsplash.com/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8aae827318dc14d0b863be5e94a0fb41) 50% 50%;
 }
 
@@ -294,6 +291,7 @@ img.logo-vert-padding
   {
     font-size: 20px;
     width: 100%;
+    min-width: 0px;
   }
 
   .container-header p
