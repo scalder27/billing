@@ -1,3 +1,5 @@
+@import "fonts.css" screen;
+
 body
 {
   margin: 0;
@@ -13,7 +15,7 @@ body
 
 .img-download
 {
-  font-family: "Segoe UI";
+  font-family: "Proxima Nova";
   font-size: 24px;
   color: #b7b7b7;
   text-decoration: none;
