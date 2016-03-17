@@ -89,6 +89,7 @@ body
   visibility: hidden;
 }
 
+
 .container-example-dark:hover .hover
 {
   height: 82px;
@@ -216,10 +217,22 @@ p
   min-width: 400px;
 }
 
-img
+.div-img
 {
+  width: 206px;
+  height: 27px;
   margin-top: 10px;
   margin-right: 10px;
+}
+
+.div-img1
+{
+  width: 189px;
+  height: 64px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-image: url(logos/logo-mono-vert.png);
+  background-size: 189px 64px;
 }
 
 /* стили логотипов */
@@ -242,6 +255,15 @@ img.logo-vert-padding
 {
   height: 27px;
   margin: 75px auto 0;
+}
+
+.logo:before
+{
+  content: "\E015";
+  font-family: "Kontur-Iconic";
+  font-size: 24px;
+  color: white;
+
 }
 
 .logo-vert
@@ -312,7 +334,7 @@ img.logo-vert-padding
   .container-header p
   {margin-bottom: -20px;}
 
-  /*div.hover
+  /*a.hover
   {
     display: block;
     height: 82px;
