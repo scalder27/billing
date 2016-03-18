@@ -17,9 +17,21 @@ body
   padding: 3% 10% 10% 10%;
 }
 
-.description
+.container-description
 {
   margin-top: 70px;
+}
+
+.description-img
+{
+  float: left;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+.container-examples
+{
+  margin-top: 60px;
 }
 
 .container-example
@@ -244,6 +256,7 @@ p
 .logo-vert-image
 {
   height: 64px;
+  margin-top: 10px;
 }
 
 img.logo-vert-padding
