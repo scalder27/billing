@@ -369,7 +369,7 @@ h2
 p
 {
   font-size: 18px;
-  width: 60%;
+  width: 75%;
   margin-top: 0px;
   min-width: 400px;
 }
@@ -465,6 +465,13 @@ img.logo-vert-padding
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 900px) and (max-width: 960px) {
+  p
+  {
+    width: 80%;
+  }
+}
+
 
 @media only screen and (max-width: 1120px)
 {
@@ -480,7 +487,6 @@ img.logo-vert-padding
     margin-bottom: 1px;
   }
 }
-
 
 
 @media only screen and (max-width: 370px)
