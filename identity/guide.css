@@ -13,7 +13,7 @@ body
 {
   margin: 0 auto;
   /*width: 100%;*/
-  max-width: 1200px;
+  max-width: 980px;
   padding: 3% 10% 10% 10%;
 }
 
@@ -40,12 +40,13 @@ body
 {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
-
 
 .description-icon
 {
   width: 33.2%;
+  position: relative;
   border: 1px solid #e8e8e8;
   margin-right: -1px;
 }
@@ -129,7 +130,6 @@ body
   visibility: hidden;
 }
 
-
 .container-example-dark:hover .hover
 {
   height: 82px;
@@ -158,6 +158,32 @@ body
   visibility: visible;
   cursor: pointer;
 }
+
+
+.description-icon:hover .hover
+{
+  display: inline-block;
+  height: 68px;
+  padding-top: 40px;
+  background-color: rgba(64, 64, 64, 0.7);
+  visibility: visible;
+  cursor: pointer;
+}
+
+.icon-grey:hover .hover
+{
+  display: inline-block;
+  height: 68px;
+  padding-top: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  visibility: visible;
+  cursor: pointer;
+}
+
+.icon-grey:hover .hover-text
+{
+  display: inline;
+}
 .container-example-dark:hover .hover-text
 {
   display: inline;
@@ -173,6 +199,13 @@ body
   display: inline;
   visibility: visible;
 }
+
+.description-icon:hover .hover-text-light
+{
+  display: inline;
+  visibility: visible;
+}
+
 
 .hover-bottom
 {
@@ -226,7 +259,7 @@ body
   font-weight: 600;
   text-decoration: none;
   text-align: center;
-  padding: 10px 0px;
+  padding: 15px 0px;
   font-size: 18px;
   min-width: 150px;
   margin-left: -1px;
@@ -237,6 +270,10 @@ body
 .tabs a:hover
 {
   background-color: #d9d9d9;
+}
+.icon-grey
+{
+  background-color: #404040;
 }
 
 .tabs-white:hover::before
