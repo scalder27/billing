@@ -343,6 +343,19 @@ body
   background: url(https://images.unsplash.com/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8aae827318dc14d0b863be5e94a0fb41) 50% 50%;
 }
 
+.link-text
+{
+  display: inline-block;
+  text-decoration: none;
+  color: #3390D8;
+  margin-top: 8px;
+}
+
+.link-text:hover
+{
+  color: #e04000;
+}
+
 
 /* Типографика и тексты */
 header
@@ -484,7 +497,12 @@ img.logo-vert-padding
   .tabs a
   {
     width: 100%;
-    margin-bottom: 1px;
+    margin-bottom: -1px;
+  }
+  .description-icon
+  {
+    width: 33.1%;
+    margin-bottom: -1px;
   }
 }
 
@@ -510,6 +528,15 @@ img.logo-vert-padding
   .container-header p
   {margin-bottom: -20px;}
 
+  .description-icon
+  {
+    width: 33%;
+  }
+
+  .icon
+  {
+    width: 45px;
+  }
 
   /*a.hover
   {
