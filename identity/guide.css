@@ -13,13 +13,54 @@ body
 {
   margin: 0 auto;
   /*width: 100%;*/
-  max-width: 1440px;
+  max-width: 980px;
   padding: 3% 10% 10% 10%;
 }
 
-.description
+.container-description
 {
   margin-top: 70px;
+}
+
+.container-description::after
+{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.description-img
+{
+  float: left;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+.container-description-icon
+{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.description-icon
+{
+  width: 33.2%;
+  position: relative;
+  border: 1px solid #e8e8e8;
+  margin-right: -1px;
+}
+
+.icon
+{
+  width: 65px;
+  margin: 20px auto;;
+  display: block;
+}
+
+.container-examples
+{
+  margin-top: 60px;
 }
 
 .container-example
@@ -70,6 +111,7 @@ body
   font-weight: normal;
   text-decoration: none;
   visibility: hidden;
+  text-decoration: none;
 }
 
 .hover
@@ -79,6 +121,7 @@ body
   padding-top: 0px;
   position: absolute;
   text-align: center;
+  text-decoration: none;
   vertical-align: baseline;
   border-bottom: 1px solid #b7b7b7;
   top: 0;
@@ -93,6 +136,7 @@ body
   padding-top: 58px;
   background-color: rgba(255, 255, 255, 0.9);
   visibility: visible;
+  cursor: pointer;
 }
 
 
@@ -102,6 +146,7 @@ body
   padding-top: 58px;
   background-color: rgba(255, 255, 255, 0.8);
   visibility: visible;
+  cursor: pointer;
 }
 
 .container-example-light:hover .hover
@@ -111,6 +156,33 @@ body
   padding-top: 58px;
   background-color: rgba(64, 64, 64, 0.7);
   visibility: visible;
+  cursor: pointer;
+}
+
+
+.description-icon:hover .hover
+{
+  display: inline-block;
+  height: 68px;
+  padding-top: 40px;
+  background-color: rgba(64, 64, 64, 0.7);
+  visibility: visible;
+  cursor: pointer;
+}
+
+.icon-grey:hover .hover
+{
+  display: inline-block;
+  height: 68px;
+  padding-top: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  visibility: visible;
+  cursor: pointer;
+}
+
+.icon-grey:hover .hover-text
+{
+  display: inline;
 }
 .container-example-dark:hover .hover-text
 {
@@ -125,13 +197,22 @@ body
 .container-example-light:hover .hover-text-light
 {
   display: inline;
+  visibility: visible;
 }
+
+.description-icon:hover .hover-text-light
+{
+  display: inline;
+  visibility: visible;
+}
+
 
 .hover-bottom
 {
   width: 100%;
   height: 0px;
   padding-top: 0px;
+  text-decoration: none;
   position: absolute;
   text-align: center;
   vertical-align: baseline;
@@ -161,7 +242,91 @@ body
   background-color: rgba(64, 64, 64, 0.7);
 }
 
+.tabs
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);*/
+  margin-bottom: 30px;
+}
 
+.tabs a
+{
+  width: 33.2%;
+  opacity: 0.5;
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 18px;
+  min-width: 150px;
+  margin-left: -1px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.6s ease 0s;
+}
+
+.tabs a:hover
+{
+  background-color: #d9d9d9;
+}
+.icon-grey
+{
+  background-color: #404040;
+}
+
+.tabs-white:hover::before
+{
+  content: "\E015";
+  font-family: "Kontur-Iconic";
+  color: black;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+
+.tabs-white::before
+{
+  content: "\E082";
+  font-family: "Kontur-Iconic";
+  color: black;
+  margin-right: 5px;
+}
+
+.tabs-black:hover:before
+{
+  content: "\E015";
+  font-family: "Kontur-Iconic";
+  color: black;
+  margin-right: 5px;
+}
+
+.tabs-black::before
+{
+  content: "\E001";
+  font-family: "Kontur-Iconic";
+  color: black;
+  margin-right: 5px;
+}
+
+.tabs-blank::before
+{
+  content: "\E015";
+  font-family: "Kontur-Iconic";
+  color: black;
+  opacity: 0;
+  margin-right: 5px;
+}
+
+.tabs-blank:hover::before
+{
+  content: "\E015";
+  font-family: "Kontur-Iconic";
+  color: black;
+  opacity: 1;
+  margin-right: 5px;
+}
 
 /*фон светлый*/
 .container-example-light
@@ -176,6 +341,19 @@ body
 {
   position: relative;
   background: url(https://images.unsplash.com/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=8aae827318dc14d0b863be5e94a0fb41) 50% 50%;
+}
+
+.link-text
+{
+  display: inline-block;
+  text-decoration: none;
+  color: #3390D8;
+  margin-top: 8px;
+}
+
+.link-text:hover
+{
+  color: #e04000;
 }
 
 
@@ -204,15 +382,27 @@ h2
 p
 {
   font-size: 18px;
-  width: 60%;
+  width: 75%;
   margin-top: 0px;
   min-width: 400px;
 }
 
-img
+.div-img
 {
+  width: 206px;
+  height: 27px;
   margin-top: 10px;
   margin-right: 10px;
+}
+
+.div-img1
+{
+  width: 189px;
+  height: 64px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-image: url(logos/logo-mono-vert.png);
+  background-size: 189px 64px;
 }
 
 /* стили логотипов */
@@ -224,6 +414,7 @@ img
 .logo-vert-image
 {
   height: 64px;
+  margin-top: 10px;
 }
 
 img.logo-vert-padding
@@ -235,6 +426,15 @@ img.logo-vert-padding
 {
   height: 27px;
   margin: 75px auto 0;
+}
+
+.logo:before
+{
+  content: "\E015";
+  font-family: "Kontur-Iconic";
+  font-size: 24px;
+  color: white;
+
 }
 
 .logo-vert
@@ -278,12 +478,34 @@ img.logo-vert-padding
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 900px) and (max-width: 960px) {
+  p
+  {
+    width: 80%;
+  }
+}
+
 
 @media only screen and (max-width: 1120px)
 {
   .vertical
   { width: 100%;}
 }
+
+@media only screen and (max-width: 920px)
+{
+  .tabs a
+  {
+    width: 100%;
+    margin-bottom: -1px;
+  }
+  .description-icon
+  {
+    width: 33.1%;
+    margin-bottom: -1px;
+  }
+}
+
 
 @media only screen and (max-width: 370px)
 {
@@ -302,6 +524,29 @@ img.logo-vert-padding
 
   .container
   {width: 100%;}
+
   .container-header p
   {margin-bottom: -20px;}
+
+  .description-icon
+  {
+    width: 33%;
+  }
+
+  .icon
+  {
+    width: 45px;
+  }
+
+  /*a.hover
+  {
+    display: block;
+    height: 82px;
+    background-color: #fff;
+    opacity: 0.5;
+    z-index: 1;
+    width: 30%;
+    padding-top: 58px;
+    visibility: visible;
+  }*/
 }

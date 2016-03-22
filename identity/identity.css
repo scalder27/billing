@@ -1,5 +1,3 @@
-@import "fonts.css" screen;
-
 body
 {
   margin: 0;
@@ -8,8 +6,9 @@ body
 
 .img
 {
-  float: right;
-  margin-top: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 
 .img-download
@@ -27,7 +26,7 @@ body
 
 .img-download-dark
 {
-  font-family: "Segoe UI";
+  font-family: "Proxima Nova";
   font-size: 24px;
   color: #fff;
   text-decoration: none;
