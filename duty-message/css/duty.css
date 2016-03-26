@@ -5,18 +5,14 @@ body
   font-family: 'Proxima Nova';
 	font-style: normal;
 	font-weight: lighter;
-
-    height: 100vh;
-    width: 100vw;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container
 {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 70%, transparent 100%);
-  /*background: url(https://images.unsplash.com/photo-1458898257815-0ec6bfaa0ade?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=396b2bb4fad48e79e4a9580f5ba14129) no-repeat center top;
-  background-size: cover;*/
 }
 
 .image
@@ -41,23 +37,57 @@ body
 {
   position: absolute;
   z-index: 2;
-  top: 10%;
+  top: 12%;
   width: 100%;
+  text-align: center;
+  background: linear-gradient(transparent, rgba(0,0,0,0.4) 80%, transparent);
 }
 
 .text
 {
   font-size: 20px;
-  width: 500px;
-  margin: 0 auto;
+  width: 370px;
+  margin: 27px auto;
   color: #fff;
-  text-align: center;
 }
 
 h1
 {
-  font-size: 40px;
-  color: white;
-  text-align: center;
+  font-size: 38px;
+  color: #fff;
   font-weight: lighter;
+  width: 370px;
+  margin: 0 auto;
+}
+
+a
+{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  margin: 10px 0px 0px 0px;
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0px;
+  transition: all 0.5s ease 0s;
+}
+
+a:hover
+{
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /*color: #494949;*/
+}
+
+a::before
+{
+  content: '\E078';
+  font-family: 'Kontur-Iconic';
+  margin: 1px 5px 0px 0px;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  top: 1px;
 }
