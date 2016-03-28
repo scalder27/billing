@@ -90,4 +90,5 @@ a::before
   -webkit-font-smoothing: antialiased;
   position: relative;
   top: 1px;
+  -moz-osx-font-smoothing: grayscale;
 }
