@@ -92,3 +92,18 @@ a::before
   top: 1px;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media only screen and (max-width: 370px)
+{
+  h1
+  {
+    font-size: 28px;
+    width: 280px;
+  }
+
+  p
+  {
+    font-size: 18px;
+    width: 280px;
+  }
+}
