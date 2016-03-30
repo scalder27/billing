@@ -1,0 +1,23 @@
+{
+  "name": "billing-identity",
+  "version": "1.0.0",
+  "description": "Identity guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mokhova/billing.git"
+  },
+  "author": "Kate Mokhova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mokhova/billing/issues"
+  },
+  "homepage": "https://github.com/Mokhova/billing#readme",
+  "dependencies": {
+    "fotorama": "^4.6.4",
+    "jquery": "^2.2.2"
+  }
+}
